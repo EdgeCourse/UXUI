@@ -1,0 +1,40 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensures images don't exceed their original size */
+    height: auto; 
+}
+
+/* Responsive Text */
+h1 {
+    font-size: 2.5rem; /* Use rems for better browser compatibility */
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Layout for Larger Screens */
+@media screen and (min-width: 768px) { 
+    section, footer{
+        float: left; 
+        width: 60%; 
+        margin-left: 20px; 
+    }
+ 
+}
+
+/* Layout for Smaller Screens */
+@media screen and (max-width: 768px) {
+    section, footer {
+        float: none; 
+        width: 100%; 
+        margin-left: 0; 
+    }
+}

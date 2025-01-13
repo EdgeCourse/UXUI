@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky; /* Keep header fixed on scroll */
+    top: 0;
+    z-index: 1;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Link Styles */
+nav ul li a:link {
+    color: white; /* Change to your desired color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray; /* Change to your desired hover color */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #666; /* Change to your desired color for visited links */
+}
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* To counteract the padding on columns */
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Responsive Navigation */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Features Section */
+    .col-md-4 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+}
+/* Tablet Landscape (e.g., 768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero img {
+        max-height: 400px; /* Adjust hero image height for tablets */
+    }
+    .features h3 {
+        font-size: 1.2em; /* Slightly smaller headings for tablets */
+    }
+}
+
+/* Desktop (e.g., 1024px and above) */
+@media only screen and (min-width: 1024px) {
+    .hero {
+        padding: 80px 0; /* Increase hero section padding */
+    }
+    .hero h1 {
+        font-size: 3em; /* Larger heading on larger screens */
+    }
+    .features {
+        padding: 80px 0; /* Increase padding for features section */
+    }
+}
+
+/* Landscape Mode */
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Portrait Mode */
+@media only screen and (orientation: portrait) {
+    .hero img {
+        max-height: 300px; /* Adjust hero image height for portrait mode */
+    }
+}
+
+/* Small Screens (e.g., Phones) */
+@media only screen and (max-width: 480px) {
+    .hero img {
+        width: 100%; 
+    } 
+    .features h3 {
+        font-size: 1em; /* Smaller headings for very small screens */
+    }
+}
+
+@media print {
+    /* Styles for print media */
+    body {
+      font-size: 12px; 
+      line-height: 1.2; 
+    }
+  
+    img {
+      max-width: 100%; 
+      height: auto; 
+    }
+  
+    a[href]:after { 
+      content: " (" attr(href) ")"; 
+    }
+  
+    @page { 
+      size: auto; 
+      margin: 0.5in; 
+    }
+  }
+
+
+
+
+
